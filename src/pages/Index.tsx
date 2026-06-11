@@ -8,12 +8,11 @@ import { Certificates } from '@/components/Certificates';
 import { Contact } from '@/components/Contact';
 import { TerminalAdvanced } from '@/components/TerminalAdvanced';
 import { ThemeToggle } from '@/components/ThemeToggle';
-import { Header } from '@/components/Header';
 
 const Index = () => {
   return (
     <main className="relative">
-      <Header />
+      <ThemeToggle />
       <Hero />
       <About />
       <Skills />
@@ -27,7 +26,7 @@ const Index = () => {
       <footer className="py-8 text-center border-t border-border">
         <p className="text-muted-foreground font-mono text-sm">
           <span className="text-primary">{'// '}</span>
-          {new Date().getFullYear()} &copy; Neel Prajapati Crafted with ❤️
+           {new Date().getFullYear()} &copy; Neel Prajapati Crafted with ❤️
           <span className="text-primary">{' //'}</span>
         </p>
       </footer>
