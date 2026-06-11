@@ -37,26 +37,25 @@ export const About = () => {
             <span className="text-primary">{'// '}</span>About Me
           </h2>
 
-          <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-center md:text-left"
             >
-              <p className="text-base md:text-lg text-muted-foreground mb-4">
+              <p className="text-lg text-muted-foreground mb-4">
                 I'm a passionate developer who loves creating interactive web experiences.
                 With expertise in modern JavaScript frameworks and a keen eye for design,
                 I bring ideas to life through code.
               </p>
-              <p className="text-base md:text-lg text-muted-foreground">
+              <p className="text-lg text-muted-foreground">
                 When I'm not coding, you'll find me exploring new technologies,
                 contributing to open source, or sharing knowledge with the dev community.
               </p>
             </motion.div>
 
             <motion.div
-              className="relative aspect-square w-3/4 max-w-[300px] md:w-full md:max-w-none mx-auto rounded-2xl overflow-hidden card-glow group"
+              className="relative aspect-square rounded-2xl overflow-hidden card-glow group"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -65,7 +64,7 @@ export const About = () => {
               <img
                 src="/profile.png"
                 alt="Profile"
-                className="w-full h-full object-fill object-center hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
               />
             </motion.div>
           </div>
