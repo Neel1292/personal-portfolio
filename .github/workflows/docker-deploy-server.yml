@@ -3,7 +3,7 @@ name: Build and Deploy Docker Image to Server
 on:
   push:
     # TODO: change back to main when ready for production deploys
-    branches: [ feat/dockerize-app ]
+    branches: [ live ]
 
 jobs:
   build-and-push:
